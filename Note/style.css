@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #7BDAF3;
+    font-family: 'Shippori Antique', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.notes{
+    background-color: #ECFAF5;
+    margin: 20px;
+    width: 400px;
+    height: 400px;
+
+}
+.notes .tools{
+    background-color: #ECFAF5;
+    display : flex;
+    padding: 0.5rem;
+}
+
+.notes .tools button{
+    background-color: transparent;
+    border :none ;
+    color: #9EC862;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+}
+
+.notes .main{
+    overflow: hidden;
+    height: 400px;
+    width: 100%;
+
+}
+
+.notes textarea{
+    outline: none;
+    height: 100%;
+    width: 100%;
+    border : none;
+    font-size: 1.2rem;
+}
+
+.notes .hidden{
+    display: none;
+}
