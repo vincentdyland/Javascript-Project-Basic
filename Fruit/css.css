@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Shippori Antique', sans-serif;
+    margin: 0;
+    background: #D3CCE3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    min-height: 100vh;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+.mobile-container{
+    background-color: white;
+    box-shadow: 0 0 10px #b8add3;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 400px;
+    
+}
+
+header{
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    padding: 1rem;
+    
+
+}
+
+header input{
+    background-color: #eee;
+    border: 1px;
+    border-radius: 3px;
+    padding: 0.5 1rem;
+
+}
+
+header button{
+    background-color: transparent;
+    border: none;
+    color: #aaa;
+    font-size: 1.5rem;
+    margin-left: 10px;
+
+}
+
+.fav-container{
+    padding: 1rem;
+    text-align: center;
+    background-color: rgb(230, 195, 195);
+}
+
+.fav-meals{
+    display: flex;
+    list-style-type: none;
+    overflow: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+.fav-meals li{
+    padding : 5px;
+}
+
+.fav-meals li img{
+    display: flex;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+    box-shadow: 0 0 10px #aaa;
+    border : 2px solid white;
+}
+
+.fav-meals li span{
+    font-size: 0.7rem;
+}
+
+.meal{
+    margin: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px rgb(185, 172, 172); ;
+}
+.meal-header{
+    position: relative;
+}
+
+.meal-header .random{
+    position : absolute;
+    top: 10px;
+    background-color: #fff;
+    padding: 0.25rem 1rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.meal-body{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;  
+}
+.meal-body h4{
+    margin: 0;
+}
+.meal-header img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.meal-body .fav-btn{
+    border: none;
+    background-color: transparent;
+    color: gray;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.meal-body .fav-btn.active {
+    color: red;
+}
