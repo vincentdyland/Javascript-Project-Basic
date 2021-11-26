@@ -5,80 +5,91 @@
 }
 
 body {
-    background-color: #7BDAF3;
     font-family: 'Shippori Antique', sans-serif;
     margin: 0;
+    background-color: #7BDAF3;
     display: flex;
-    justify-content : center;
     flex-wrap: wrap;
-    padding-top: 3rem;
-
+    
 }
-
-.note{
-    background-color: #ECFAF5;
-    margin: 20px;
+.notes{
     width: 400px;
     height: 400px;
-    box-shadow: 0 0 10px 2px rgba(76, 84, 133, 0.397);
-    border-radius: 5px;
-
-}
-.note .tools{
     background-color: #ECFAF5;
-    display : flex;
+    margin: 3rem;
+}
+.notes .setting-head{
+    background-color: #ECFAF5;
+    display: flex;
     justify-content : space-between;
-    padding: 1rem 15px 0px 10px;
-
-
+    padding: 15px;
 }
 
-.add{
-    background-color: #9EC862;
-    color: white;
-    border : 4px ;
-    margin : 2rem;
-    padding : 0.5rem 1rem;
-    position: fixed;
-    top: -1rem;
-    right: -1.3rem;
+#setting-left button{
+    color: #9EC862;
+    font-size: 1.2rem;
     cursor: pointer;
-    box-shadow: 0 0 5px rgb(61, 56, 56);
-    border-radius: 5px;
+}
+
+#setting-right button{
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.notes .setting-head button{
+    border: none;
+    background-color: #ECFAF5;
+    cursor: pointer;
+}
+textarea{
+    width: 100%;
+    height: 50px;
+    font-size: 17px;
+    overflow: auto;
+    outline: none;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 1px 6px;
+}
+
+.setting-foot button{
+    cursor: pointer;
+    margin: 13rem 7.5rem;
+    width: 10rem;
+    height: 3rem;
+    font-weight : bold;
+    background-color: #9EC862;
+    border : none;
+    border-radius: 10px;
+    color : #ECFAF5;
+    box-shadow: 0 0 5px 2px #9EC862;
     
 }
 
-.note .tools button{
-    background-color: transparent;
-    border :none ;
-    color: #9EC862;
-    font-size: 1.3rem;
-    margin-left: 0.5rem;
+.add{
+    width : 6rem;
+    height: 2rem;
+    margin: 2rem 2rem;
+    background-color : #9EC862;
+    border :none;
+    color: white;
+    position :fixed;
     cursor: pointer;
-}
-
-.note .tools .delete{
-    color: #515554;
-    font-size: 1.8rem;
-    cursor: pointer;
-}
-
-.note .main{
-   
-    height: 400px;
-    width: 100%;
-
-}
-
-.note textarea{
-    outline: none;
-    height: 100%;
-    width: 100%;
-    border : none;
-    font-size: 1.2rem;
-    overflow: hidden;
+    margin: 2rem;
+    top: -1rem;
+    right: -1.3rem;
+    
 }
 
 .note .hidden{
     display: none;
 }
+
+.main{
+    padding: 1rem 2rem;
+}
+
+
+
+
