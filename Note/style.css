@@ -19,7 +19,7 @@ body {
     margin: 3rem;
 }
 .notes .setting-head{
-    background-color: #ECFAF5;
+    background-color: #d9eee7;
     display: flex;
     justify-content : space-between;
     padding: 15px;
@@ -38,7 +38,7 @@ body {
 
 .notes .setting-head button{
     border: none;
-    background-color: #ECFAF5;
+    background-color: #d9eee7;
     cursor: pointer;
 }
 textarea{
@@ -88,6 +88,7 @@ textarea{
 
 .main{
     padding: 1rem 2rem;
+    color: #9BA4A3;
 }
 
 
