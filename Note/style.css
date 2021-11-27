@@ -7,26 +7,28 @@
 body {
     font-family: 'Shippori Antique', sans-serif;
     margin: 0;
-    background-color: #7BDAF3;
+    background-image: url(1.jpg);
     display: flex;
     flex-wrap: wrap;
+    
     
 }
 .notes{
     width: 400px;
     height: 400px;
-    background-color: #ECFAF5;
+    background-image: url(2.jpg);
+    background-size: 100% 100%;
     margin: 3rem;
 }
 .notes .setting-head{
-    background-color: #d9eee7;
+    background-color: #96895f;
     display: flex;
     justify-content : space-between;
     padding: 15px;
 }
 
 #setting-left button{
-    color: #9EC862;
+    color: #e0b939;
     font-size: 1.2rem;
     cursor: pointer;
 }
@@ -38,7 +40,7 @@ body {
 
 .notes .setting-head button{
     border: none;
-    background-color: #d9eee7;
+    background-color: #96895f;
     cursor: pointer;
 }
 textarea{
@@ -47,10 +49,11 @@ textarea{
     font-size: 17px;
     overflow: auto;
     outline: none;
-    border: 1px solid #ccc;
+    border: 3px solid #e0b939;
     font-family: inherit;
     font-size: inherit;
     padding: 1px 6px;
+    opacity: 1;
 }
 
 .setting-foot button{
@@ -59,11 +62,11 @@ textarea{
     width: 10rem;
     height: 3rem;
     font-weight : bold;
-    background-color: #9EC862;
+    background-color: #e0b939;
     border : none;
     border-radius: 10px;
     color : #ECFAF5;
-    box-shadow: 0 0 5px 2px #9EC862;
+    box-shadow: 0 0 5px 2px #a08b46;
     
 }
 
@@ -71,7 +74,7 @@ textarea{
     width : 6rem;
     height: 2rem;
     margin: 2rem 2rem;
-    background-color : #9EC862;
+    background-color : #685d39;
     border :none;
     color: white;
     position :fixed;
@@ -87,8 +90,8 @@ textarea{
 }
 
 .main{
-    padding: 1rem 2rem;
-    color: #9BA4A3;
+    padding: 1rem 3rem;
+    color: #3a3d3d;
 }
 
 

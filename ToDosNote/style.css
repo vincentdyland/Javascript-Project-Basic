@@ -37,8 +37,6 @@ form {
     padding: 1rem 2rem;
     background-color: #fff;
     border: none;
-    display: block;
-    
 }
 
 .input::placeholder{

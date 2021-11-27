@@ -20,7 +20,7 @@ addNewNote = function() {
             </div>
         </div>
         <div class="main hidden"></div>
-        <textarea></textarea>
+        <textarea placeholder="Enter text here"></textarea>
         <div class="setting-foot">
             <button id="save">Save</button>
         </div>
