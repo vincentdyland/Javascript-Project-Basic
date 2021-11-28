@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Shippori Antique', sans-serif;
+    margin: 0;
+    background-color : rgb(18, 15, 51);
+    
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    background-color :rgb(21, 40, 75);
+    display: flex;
+    padding: 1.5rem;
+    justify-content: flex-end;
+
+}
+
+.search{
+    background-color : transparent;
+    padding: 0.7rem 1rem;
+    border-radius: 50px;
+    border : 1px solid #5c5f8a;
+    font-family: inherit;
+    font-size : 1rem;
+    color: white;
+
+}
+
+.search::placeholder{
+    color: rgb(140, 158, 192);
+}
+
+.search:focus{
+    background-color : #5c5f8a;
+    outline: none;
+}
+
+.movie{
+    width : 300px;
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    background-color : rgb(21, 40, 75);
+    margin: 1rem;
+    overflow: hidden;
+}
+
+.movie img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    
+
+}
+
+.movie-info {
+    display:  flex;
+    justify-content: space-between;
+    padding:  0.5rem 1rem 1rem;
+    color : #eee;
+    letter-spacing: 1px;
+
+}
+
+.movie-info h3{
+    margin: 0;
+}
+
+.movie-info span{
+    padding : 0.25rem 0.5rem;
+    background-color : rgb(41, 61, 102);
+    font-weight : bold;
+}
+
+.movie-info span.green{
+    color : rgb(56, 185, 56);
+}
+
+.movie-info span.orange{
+    color : orange;
+}
+
+.movie-info span.red{
+    color : red;
+}
