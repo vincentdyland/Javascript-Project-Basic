@@ -7,8 +7,7 @@
 body {
     font-family: 'Shippori Antique', sans-serif;
     margin: 0;
-    background-color : rgb(18, 15, 51);
-    
+    background-image: url(1.jpg);
 }
 
 main {
@@ -17,11 +16,23 @@ main {
 }
 
 header {
-    background-color :rgb(21, 40, 75);
+    background-color : black;
     display: flex;
     padding: 1.5rem;
-    justify-content: flex-end;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
 
+.brand{
+    margin: 0;
+    color: #e0e1e9;
+    font-size: 3rem;
+    font-weight: bold;
+    border-radius: 20px;
+    font-family: cursive;
+    box-shadow: 0 0 10px 5px rgba(187, 171, 171, 0.7);
+    padding:1rem;
+    
 }
 
 .search{
@@ -32,52 +43,61 @@ header {
     font-family: inherit;
     font-size : 1rem;
     color: white;
+    margin-top : 1.5rem;
+    width : 300px;
+    box-shadow: 0 0 10px 5px #fff;
 
 }
 
 .search::placeholder{
-    color: rgb(140, 158, 192);
+    color: rgb(216, 220, 230);
 }
 
 .search:focus{
-    background-color : #5c5f8a;
+    background-color : #0e0e14;
     outline: none;
 }
 
 .movie{
+    
     width : 300px;
     border-radius: 3px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
     background-color : rgb(21, 40, 75);
     margin: 1rem;
     overflow: hidden;
+    position: relative;
 }
 
 .movie img {
-    height: 400px;
     width: 100%;
-    object-fit: cover;
-    
+    height : 82%;
 
 }
 
 .movie-info {
     display:  flex;
     justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
     padding:  0.5rem 1rem 1rem;
     color : #eee;
     letter-spacing: 1px;
+    display: flex;
 
 }
 
 .movie-info h3{
     margin: 0;
+    font-size: 1rem;
 }
+
 
 .movie-info span{
     padding : 0.25rem 0.5rem;
     background-color : rgb(41, 61, 102);
     font-weight : bold;
+    border-radius: 3px;
 }
 
 .movie-info span.green{
@@ -90,4 +110,34 @@ header {
 
 .movie-info span.red{
     color : red;
+}
+
+.overview {
+    background-color: rgb(41, 61, 102);
+    padding: 2rem;
+    position: absolute;
+    max-height: 100%;
+    overflow: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+    color: #fff;
+}
+
+.overview h3 {
+    margin-top: 0;
+}
+
+.movie:hover .overview {
+    transform: translateY(0);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    margin: 0;
+    height: 100px;
+    padding: 1.5rem;
 }
