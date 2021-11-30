@@ -78,7 +78,7 @@ main {
     margin: 1rem;
     overflow: hidden;
     top: 3rem;
-    
+    cursor: pointer;
 }
 
 .movie img {
@@ -139,7 +139,7 @@ main {
     background-color: rgb(231, 226, 226);
     padding: 2rem;
     position: absolute;
-    max-height: 100%;
+    max-height: 80%;
     overflow: auto;
     left: 0;
     bottom: 0;

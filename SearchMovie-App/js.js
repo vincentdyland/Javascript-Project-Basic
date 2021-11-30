@@ -21,7 +21,7 @@ async function getMovies(url) {
 function showMovies(movies) {
     // clear main
     main.innerHTML = "";
-
+    
     movies.forEach((propertiesOfMovie) => {
         const { poster_path, title, vote_average, overview } = propertiesOfMovie;
 
@@ -46,12 +46,10 @@ function showMovies(movies) {
             </div>
         </div>    
         `;
-
         main.appendChild(movieEl);
-
-
     });
 }
+
 
 function getClassByRate(vote) {
     if (vote >= 8) {
