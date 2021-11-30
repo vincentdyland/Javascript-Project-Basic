@@ -5,7 +5,6 @@ const SEARCHAPI = "https://api.themoviedb.org/3/search/movie?&api_key=04c35731a5
 const main = document.getElementById("main");
 const form = document.getElementById("form");
 const search = document.getElementById("search");
-const a = document.getElementsByTagName('div')[0];
 
 // initially get fav movies
 getMovies(APIURL);
@@ -23,29 +22,29 @@ function showMovies(movies) {
     // clear main
     main.innerHTML = "";
 
-    movies.forEach((movie) => {
-        const { poster_path, title, vote_average, overview } = movie;
+    movies.forEach((propertiesOfMovie) => {
+        const { poster_path, title, vote_average, overview } = propertiesOfMovie;
 
         const movieEl = document.createElement("div");
         movieEl.classList.add("movie");
 
         movieEl.innerHTML = `
+        <div class="a">
             <img
                 src="${IMGPATH + poster_path}"
                 alt="${title}"
             />
             <div class="movie-info">
                 <h3>${title}</h3>
-                <div class="vote">
                 <span class="${getClassByRate(
                     vote_average
                 )}">${vote_average}</span>
-                </div>
             </div>
             <div class="overview">
                 <h3>Overview:</h3>
                 ${overview}
             </div>
+        </div>    
         `;
 
         main.appendChild(movieEl);
