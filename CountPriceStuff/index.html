@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+    
+    <link rel="stylesheet" href="./css/css.css">
+    
+    
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Description</th>
+                        <th>Quantity/Update</th>
+                        <th>Price</th>
+                        <th>Discount</th>
+                        <th>Tax</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="./images/1.jpg" alt="">
+                        </td>
+                        <td>
+                            MASSA AST <br>
+                            Color: black, Material: metal
+                        </td>
+                        <td>
+                            <input type="number" value="1" min="1">
+                            <button class="btn" id="dec">-</button>
+                            <button class="btn" id="inc">+</button>
+                            <button class="btn btn-danger" id="remove">X</button>
+                        </td>
+                        
+                        <td>$120.00</td>
+                        <td>$25.00</td>
+                        <td>$15.00</td>
+                        <td>$110.00</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./images/15.jpg" alt="">
+                        </td>
+                        <td>
+                            MASSA AST <br>
+                            Color: black, Material: metal
+                        </td>
+                        <td>
+                            <input type="number" value="1" min="1">
+                            <button class="btn" id="dec">-</button>
+                            <button class="btn" id="inc">+</button>
+                            <button class="btn btn-danger" id="remove">X</button>
+                        </td>
+                        
+                        <td>$7.00</td>
+                        <td>--</td>
+                        <td>$1.00</td>
+                        <td>$8.00</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./images/2.jpg" alt="">
+                        </td>
+                        <td>
+                            MASSA AST <br>
+                            Color: black, Material: metal
+                        </td>
+                        <td>
+                            <input type="number" value="1" min="1">
+                            <button class="btn" id="dec">-</button>
+                            <button class="btn" id="inc">+</button>
+                            <button class="btn btn-danger" id="remove">X</button>
+                        </td>
+                        
+                        <td>$120.00</td>
+                        <td>$25.00</td>
+                        <td>$15.00</td>
+                        <td>$110.00</td>
+                        
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">Total Price</td>
+                        <td id="sumTotal"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">Total Discount</td>
+                        <td id="sumDiscount"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">Total Tax</td>
+                        <td id="sumTax"></td>
+                    </tr>
+                    
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js"
+        integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u"
+        crossorigin="anonymous"></script>
+    <script src="./js/js.js"></script>
+
+</body>
+
+</html>
