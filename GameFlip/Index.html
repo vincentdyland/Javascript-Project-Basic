@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Flip-Flop</title>
+    <link type="text/css" rel="stylesheet" href="Styles/GameStyles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <h1 class="game-title"></h1>
+    <div class="overlay-text visible">Click to Start</div>
+    <div id="gameOverText" class="overlay-text">
+      GAME OVER!
+      <span class="overlay-text-small">Click to Restart</span>
+    </div>
+
+    <div id="winText" class="overlay-text">
+      YOU WIN! <span class="overlay-text-small">Click to Restart</span>
+    </div>
+    <div id="gameMainBlock" class="game-container">
+      <div id="gameInfoBlock" class="game-info-block">
+        <div class="game-info"><span id="Timer"></span></div>
+        <div class="game-info"><span id="Flips"></span></div>
+      </div>
+    </div>
+    <p>
+      Flip the pictures below and find the same pictures within the allotted
+      time
+    </p>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="Scripts/Controllers.js"></script>
+    <script type="text/javascript" src="Scripts/FlipFlop.js"></script>
+  </body>
+</html>
